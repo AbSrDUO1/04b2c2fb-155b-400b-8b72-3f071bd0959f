@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarLayoutSplitBottom from '@/components/navigation/NavbarLayoutSplitBottom/NavbarLayoutSplitBottom';
 import TokenBillboardHero from '@/components/sections/layouts/hero/TokenBillboardHero';
@@ -9,9 +9,9 @@ import FooterLogoEmphasis from '@/components/footer/FooterLogoEmphasis';
 
 export default function Home() {
   return (
-    <SiteThemeProvider theme={{ styleVariant: 'funAndTrendy', colorTemplate: 1, textAnimation: 'slide' }}>
+    <SiteThemeProvider theme={{ styleVariant: "funAndTrendy", colorTemplate: 1, textAnimation: "slide" }}>
       <div id="nav" data-section="nav">
-        <NavbarLayoutSplitBottom 
+        <NavbarLayoutSplitBottom
           logoSrc="/images/logo.svg"
           logoWidth={120}
           logoHeight={50}
@@ -29,7 +29,7 @@ export default function Home() {
         />
       </div>
       <div id="hero" className="scroll-mt-24">
-        <TokenBillboardHero 
+        <TokenBillboardHero
           title="Welcome to Mvpblocks"
           subtitle="The ultimate solution for your needs"
           contractAddress="0x123..."
@@ -38,31 +38,31 @@ export default function Home() {
         />
       </div>
       <div id="about" className="scroll-mt-24">
-        <SocialsAbout 
+        <SocialsAbout
           title="About Mvpblocks"
           descriptions={["Mvpblocks provides a comprehensive solution for...", "We believe in accessibility and innovation."]}
         />
       </div>
       <div id="how-to-buy" className="scroll-mt-24">
-        <HowToBuy2D 
+        <HowToBuy2D
           variant="simple"
         />
       </div>
       <div id="tokenomics" className="scroll-mt-24">
-        <PatternTokenomics 
+        <PatternTokenomics
           title="Tokenomics"
           description="Our tokens are structured to provide maximum efficiency."
-          kpiItems={[ { value: "100M", description: "Total Supply", icon: LucideIcon }, ... ]}
+          kpiItems={[{ value: "100M", description: "Total Supply", icon: "SomeDefaultIcon" }, ... ]}
         />
       </div>
       <div id="footer" className="scroll-mt-24">
-        <FooterLogoEmphasis 
+        <FooterLogoEmphasis
           logoSrc="/images/logo.svg"
           logoAlt="Mvpblocks Logo"
           logoText="Mvpblocks"
           columns={[
-            { title: "Company", items: [ { label: "About", onClick: () => {} }, ... ] },
-            { title: "Support", items: [ { label: "Contact", onClick: () => {} }, ... ] }
+            { title: "Company", items: [{ label: "About", onClick: () => {} }] },
+            { title: "Support", items: [{ label: "Contact", onClick: () => {} }] }
           ]}
           copyrightText="© 2023 Mvpblocks"
           onPrivacyClick={() => { /* handle privacy click */ }}
