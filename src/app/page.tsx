@@ -52,7 +52,7 @@ export default function Home() {
         <PatternTokenomics
           title="Tokenomics"
           description="Our tokens are structured to provide maximum efficiency."
-          kpiItems={[{ value: "100M", description: "Total Supply", icon: "SomeDefaultIcon" }, {... }]}
+          kpiItems={[{ value: "100M", description: "Total Supply", icon: "ArrowRight" }, { value: "75M", description: "Circulating Supply", icon: "ArrowRight" }]} // Replace with valid icons
         />
       </div>
       <div id="footer" className="scroll-mt-24">
